@@ -172,21 +172,51 @@ td:first-child{
     margin-bottom: 15px;
 }
 #contact{
+  padding: 60px 8%;
+  
+}
+#contactForm{
     
-    padding: 60px;
-
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 #contact h2{
-    font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
-#contact table{
-    border-spacing: 15px;
+#contactForm label{
+    font-weight: bold;
+    margin-top: 10px;
 }
-#contact td{
-    padding-right: 20px;
-    font-size: 22px;
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 12%;
+  border: none;
+  border-radius:8px ;
+  font-size: 16px;
+  box-sizing: border-box;
 }
+#contactForm textarea{
+    min-height: 120px;
+    resize: vertical;
+}
+#contactForm button{
+    width: fit-content;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #9cff00;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+}
+#contactForm button:hover {
+    transform: scale(1.05);
+}
+
 footer{
     margin-top: 50px;
     text-align: center;
