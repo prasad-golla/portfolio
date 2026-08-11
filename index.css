@@ -79,13 +79,17 @@ nav a{
 
 }
 .btn2{
-    background: lightgrey;
+    background: rgb(164, 151, 30);
     padding: 24px 24px;
     border:2px solid white;
     border-radius: 8px;
     margin-top: 20px;
     cursor: pointer;
     color: white;
+}
+.btn2:hover{
+    background-color: aqua;
+    transition: 1.5;
 }
 #about{
     line-height: 35px;
@@ -222,4 +226,105 @@ footer{
     text-align: center;
     font-size: 18px;
     color: lightgrey;
+}
+
+@media(max-width:768px)
+{
+    header{
+        padding: 15px 20px;
+    }
+    nav{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    section{
+        padding: 40px 5%;
+    }
+    #contactForm{
+        width:100%;
+        max-width: 600px;
+    }
+    #contactForm input,
+    #contactForm textarea{
+        width:100%;
+        box-sizing:border-box;
+    }
+}
+
+@media(max-width:480px){
+    header{
+        padding:15px;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+    nav a{
+        font-size: 12px;
+    }
+    section{
+        padding: 30px 5%;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    #contact{
+        padding: 30px 5%;
+    }
+    #contactForm{
+        width: 100%;
+    }
+    #contactForm input,
+    #contactForm textarea{
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        box-sizing: border-box;
+       
+    }
+    #contactForm button{
+        
+        width: 100%;
+    }
+    #home{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+
+    }
+    #home .homecontent {
+        width: 100% !important;
+        text-align: center;
+    }
+    #home h2{
+        font-size: 42px;
+        line-height: 1.1;
+        margin-bottom: 25px;
+    }
+    #home p{
+        font-size: 18px ;
+        line-height: 1.5;
+        margin: 0 auto;
+       max-width: 300px;
+    }
+    #home img{
+        width: 70% !important;
+        max-width: 250px;
+        height: auto !important;
+        margin-top: 25px;
+        object-fit: contain;
+    }
+    .buttons{
+        margin-top: 20px;
+    }
 }
