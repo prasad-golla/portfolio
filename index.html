@@ -1,147 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <link href="index.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prasad Golla | Aspiring MERN Stack Developer</title>
+<meta name="description" content="Portfolio of Prasad Golla, B.Tech CSE student and aspiring MERN Stack Developer.">
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-    <h1>PRASAD GOLLA</h1>
-    <P>Aspiring MERN STACK Developer</P>
-    </header>
-    <br><br>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <br><br>
-    <section id="home">
-        <div class="home-content">
-        <h2>Hi,I'm Golla Prasad</h2>
-            <p>I'm a B-Tech CSE student
-passionate about
-      Web Development and DSA.</p>
-      
-        <div class="buttons">
-             <button class="btn1">View my work</button>
-              <button class="btn2">Get in touch</button>
-        </div>
+
+<header class="topbar">
+  <nav class="navwrap">
+    <div class="logo">PRASAD<span>.</span>GOLLA</div>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="navright">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
-        <img src="roses.jpg" alt="prasad photo" >
-    </section>
-    <br><br><br>
-    <section id="about">
-        <h2 id="sec">ABOUT ME</h2>
-        <table>
-            <tr>
-                <td>Name</td>
-                <td>:</td>
-                <td>Golla Prasad</td>
-            </tr>
-             <tr>
-                <td>Education</td>
-                <td>:</td>
-                <td>B-Tech CSE</td>
-            </tr>
-             <tr>
-                <td>College</td>
-                <td>:</td>
-                <td>SRM University</td>
-            </tr>
-             <tr>
-                <td>Year</td>
-                <td>:</td>
-                <td>2nd</td>
-            </tr>
-             <tr>
-                <td>Goal</td>
-                <td>:</td>
-                <td>Become a MERN Stack Developer</td>
-            </tr>
-        </table>
-        <p>
-            I am passionate about <span>Web Development</span>
-        and
+  </nav>
+  <div class="mobilemenu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
 
-           <span> Data Structures & Algorithms</span>.I enjoy
-            building responsive
-            web applications and continuously
-            learning 
-            new technologies</p>
-    </section>
-    <br><br>
-
-    <section id="skills">
-        <h2>SKILLS</h2>
-        <div class="skilla">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JS</div>
-        <div class="skill">C</div>
-        <div class="skill">C++</div>
-        </div>
-    </section>
-  <section id="projects">
-    <h2>PROJECTS</h2>
-
-    <div class="project">
-
-        <div class="refer">
-            <h3>Portfolio Website</h3>
-            <p>A responsive personal portfolio website showcasing my skills and projects.</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-        </div>
-
-        <div class="refer">
-            <h3>Calculator</h3>
-            <p>A simple calculator for performing basic arithmetic operations.</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </div>
-
-        <div class="refer">
-            <h3>Budget Manager</h3>
-            <p>A C-based application for managing and tracking expenses.</p>
-            <ul>
-                <li>C</li>
-            </ul>
-        </div>
-
+<section id="home">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">Hi, I'm</span>
+      <h1 class="hero-title">Golla Prasad<br><span class="grad">Aspiring MERN Stack Developer</span></h1>
+      <p class="hero-sub">B.Tech CSE student passionate about Web Development and Data Structures & Algorithms. I enjoy building responsive web apps and learning new technologies.</p>
+      <div class="btnrow">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
     </div>
+    <div class="avatar">GP</div>
+  </div>
 </section>
 
-    
-   <section id="contact">
-     <h2>CONTACT</h2>
-     <form id="contactForm">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Enter your name">
+<section id="about">
+  <div class="container reveal">
+    <h2 class="sectitle">About Me</h2>
+    <p class="sectsub">A quick snapshot of where I am right now</p>
+    <div class="about-grid">
+      <div class="about-card">
+        <dl>
+          <dt>Name</dt><dd>Golla Prasad</dd>
+          <dt>Education</dt><dd>B.Tech CSE</dd>
+          <dt>College</dt><dd>SRM University</dd>
+          <dt>Year</dt><dd>2nd Year</dd>
+          <dt>Goal</dt><dd>MERN Stack Developer</dd>
+        </dl>
+      </div>
+      <div class="about-text">
+        I'm passionate about <strong>Web Development</strong> and <strong>Data Structures &amp; Algorithms</strong>. I enjoy building responsive web applications and continuously learning new technologies — currently deepening my skills in the MERN stack while sharpening DSA fundamentals for problem solving.
+      </div>
+    </div>
+  </div>
+</section>
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Enter your email">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" placeholder="Enter your message"></textarea>
-        <button type="submit">Send message</button>
-     </form>
-   </section>
-    <br><br>
-    <footer>
-        <p>
-            @2026 PRASAD GOLLA
-        </p>
-        <P>All Rights Reserved</P>
-    </footer>
-    <script src="script.js"></script>
+<section id="skills">
+  <div class="container reveal">
+    <h2 class="sectitle">Skills</h2>
+    <p class="sectsub">Technologies I've worked with so far</p>
+    <div class="skillgrid">
+      <div class="skillcard"><div class="skillicon">🌐</div><div class="skillname">HTML</div></div>
+      <div class="skillcard"><div class="skillicon">🎨</div><div class="skillname">CSS</div></div>
+      <div class="skillcard"><div class="skillicon">⚡</div><div class="skillname">JavaScript</div></div>
+      <div class="skillcard"><div class="skillicon">🔤</div><div class="skillname">C</div></div>
+      <div class="skillcard"><div class="skillicon">➕</div><div class="skillname">C++</div></div>
+      <div class="skillcard"><div class="skillicon">🧩</div><div class="skillname">DSA</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container reveal">
+    <h2 class="sectitle">Projects</h2>
+    <p class="sectsub">Things I've built while learning</p>
+    <div class="projgrid">
+      <div class="projcard">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio website showcasing my skills and projects.</p>
+        <div class="tagrow"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+      </div>
+      <div class="projcard">
+        <h3>Calculator</h3>
+        <p>A simple calculator for performing basic arithmetic operations.</p>
+        <div class="tagrow"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      </div>
+      <div class="projcard">
+        <h3>Smart Budget Manager</h3>
+        <p>A C-based application for managing and tracking expenses.</p>
+        <div class="tagrow"><span class="tag">C</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container reveal">
+    <h2 class="sectitle">Contact</h2>
+    <p class="sectsub">Let's connect — reach out below</p>
+    <div class="contact-wrap">
+      <form id="contactForm">
+        <div class="field"><label for="name">Name</label><input type="text" id="name" placeholder="Your name" required></div>
+        <div class="field"><label for="email">Email</label><input type="email" id="email" placeholder="you@example.com" required></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" placeholder="Say hello..." required></textarea></div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <div class="formstatus" id="formStatus"></div>
+      </form>
+      <div class="formnote">
+        This form currently opens your email client with the message pre-filled. For a real backend, connect it to a free service like <strong>Formspree</strong> or <strong>EmailJS</strong>.
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Prasad Golla — All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
